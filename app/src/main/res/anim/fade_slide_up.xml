@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fade In animation -->
+    <alpha
+        android:duration="500"
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0" />
+    <!-- Slide Up animation -->
+    <translate
+        android:duration="500"
+        android:fromYDelta="50%p"
+        android:toYDelta="0%p" />
+</set>

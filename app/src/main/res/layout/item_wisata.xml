@@ -1,0 +1,71 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/card_background"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:clipToOutline="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <!-- Image for the tourist spot -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rounded_image"
+            android:clipToOutline="true" />
+
+        <!-- Tombol Simpan/Like di pojok kanan atas -->
+        <ImageButton
+            android:id="@+id/btnLike"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="top|end"
+            android:src="@drawable/ic_like"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Like"
+            android:scaleType="centerInside"
+            />
+    </FrameLayout>
+
+    <!-- Container for the text information -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Tempat"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:paddingStart="8dp"
+            android:paddingBottom="5dp"
+            android:textColor="#060606"
+            android:fontFamily="@font/montserrat_bold"/>
+
+        <TextView
+            android:id="@+id/textViewLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lokasi"
+            android:drawableStart="@drawable/location"
+            android:drawablePadding="5dp"
+            android:paddingStart="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="13sp"
+            android:textColor="#757575"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_regular"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>
